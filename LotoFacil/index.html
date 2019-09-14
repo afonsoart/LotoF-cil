@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loto Facil</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>    
+    <style>
+    #logo{
+        text-align: center;
+        background-color:blue;
+        color: aliceblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10px;
+    }
+    #apostar{
+        display: none;
+        background-color: beige;
+    }
+    </style>
+</head>
+<body>
+<!-- Start of first page -->
+<div data-role="page" id="inicio">
+
+        <div data-role="header">            
+            <div id='logo'><img src="img/lotofacil.png" width="180px"></div>
+                <div data-role="navbar" >
+                    <ul>
+                        <li><a href="#" class="ui-btn-active">Apostar</a></li>
+                        
+                    </ul>
+            </div><!-- /navbar -->
+        </div><!-- /header -->
+    
+        <div role="main" class="ui-content">
+            <label for="apostas">Quantas Apostas? </label>
+            <input type="number" name="apostas" id="apostas">
+            <button id='gerar' class="btn btn-primary">Gerar</button>
+            <br>
+            <div id='apostar'>
+                <ol id='lista' data-role='listview'>
+
+                </ol>
+            </div>
+        </div><!-- /content -->
+    
+        <div data-role="footer" data-position="fixed" id="logo">
+            <h4>Direitos Reservados à Team Senac Aparecida de Goiânia GO, PROF. Jorge Albernaz &#169;</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+    
+    <!-- Start of second page -->
+    <div data-role="page" id="bar">
+    
+        <div data-role="header">
+            <h1>Bar</h1>
+        </div><!-- /header -->
+    
+        <div role="main" class="ui-content">
+            <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+            <p><a href="#foo">Back to foo</a></p>
+        </div><!-- /content -->
+    
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->        
+</body>
+<script type="text/javascript" src="js/scripts.js"></script>
+</html>
