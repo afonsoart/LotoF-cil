@@ -1,2 +1,5 @@
 # LotoFácil
-APP Gerador de números totalmente aleatórios para LotoFácil.
+APP Gerador de números aleatórios para jogadores da  LotoFácil.
+
+
+![](LotoFacil/img/LotoFacilApp.png)
